@@ -26,9 +26,8 @@
 <body>
     <header>
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center py-4">
                 <h1>Welcome php</h1>
-                <h2>Bad Word!</h2>
             </div>
         </div>
     </header>
@@ -40,6 +39,9 @@
                 <p>
                     <?php echo $text ?>
                 </p>
+                <p>
+                    <?php echo strlen($text); ?>
+                </p>
             </div>
 
             <div class="col-12 bg-danger p-5">
@@ -47,6 +49,7 @@
                 <p>
                     <?php  echo " " . str_replace($bad_word,$stars,$text); ?>
                 </p>
+                <p> <?php echo strlen(str_replace($bad_word,$stars,$text)); ?></p>
             </div>
         </div>
     </main>

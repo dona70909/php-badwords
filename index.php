@@ -40,7 +40,10 @@
                     <?php echo $text ?>
                 </p>
                 <p>
-                    <?php echo strlen($text); ?>
+                    <h5>
+                        Chars:
+                        <?php echo strlen($text); ?>
+                    </h5>
                 </p>
             </div>
 
@@ -49,7 +52,12 @@
                 <p>
                     <?php  echo " " . str_replace($bad_word,$stars,$text); ?>
                 </p>
-                <p> <?php echo strlen(str_replace($bad_word,$stars,$text)); ?></p>
+                <p>
+                    <h5>
+                        Chars: 
+                        <?php echo strlen(str_replace($bad_word,$stars,$text)); ?>
+                    </h5>
+                </p>
             </div>
         </div>
     </main>
